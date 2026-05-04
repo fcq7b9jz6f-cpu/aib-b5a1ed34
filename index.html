@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حمزة حسن الجزائري - عوالم الذكاء الاصطناعية</title>
+  <meta name="description" content="موقع ويب تفاعلي ثلاثي الأبعاد لـ Hamza Hassan Elgzairy متخصص في الذكاء الاصطناعي، مع سرد بصري لمنتجات WebGL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="hero panel">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#">حمزة الجزائري</a>
+        <div class="nav-links">
+          <a href="#showcase">الاستكشاف</a>
+          <a href="#worlds">المشاريع</a>
+          <a href="#contact">ابدأ</a>
+        </div>
+      </nav>
+      <canvas id="world-canvas" aria-label="مشهد ثلاثي الأبعاد تفاعلي في البطل"></canvas>
+      <div class="hero-copy">
+        <p class="eyebrow">مواقع ويب ثلاثية الأبعاد تفاعلية</p>
+        <h1>حمزة حسن الجزائري: بناء عوالم رقمية بتكنولوجيا الذكاء الاصطناعي.</h1>
+        <p class="lede">تجربة هبوط سينمائية بتقنية WebGL مع عوالم عائمة، التركيز على المنتجات، تصميم سلس للتمرير، وتفاعل فوري مع المؤشر.</p>
+        <div class="actions">
+          <a class="button primary" href="#showcase">استكشف العوالم</a>
+          <a class="button ghost" href="#contact">لنتحدث</a>
+        </div>
+      </div>
+      <div class="scroll-cue">مرر</div>
+    </section>
+
+    <section id="showcase" class="panel split">
+      <div>
+        <p class="eyebrow">تقنيات الذكاء الاصطناعي</p>
+        <h2>ابتكار لا حدود له... منتجات تفاعلية.</h2>
+        <p>استخدم الطبقة ثلاثية الأبعاد كإشارة رئيسية، ثم دع النصوص والأقسام تدور حول القصة بدلاً من استبدالها.</p>
+      </div>
+      <model-viewer class="model-card" src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF-Binary/DamagedHelmet.glb" auto-rotate camera-controls ar shadow-intensity="1" exposure="1.1"></model-viewer>
+    </section>
+
+    <section id="worlds" class="panel cards">
+      <article><span>01</span><h3>WebGL-أولاً</h3><p>الكانفاس مرئي، متحرك، مضاء، ومتجاوب من المشاهدة الأولى.</p></article>
+      <article><span>02</span><h3>عوالم السكرول</h3><p>تدفع GSAP و Lenis الحركة السينمائية بين فصول المنتجات.</p></article>
+      <article><span>03</span><h3>جاهز للتحويل</h3><p>دعوة واضحة للعمل، محتوى ملموس، وتصميم جوال مصقول بدون مشاهد فارغة.</p></article>
+    </section>
+
+    <section id="contact" class="panel finale">
+      <p class="eyebrow">فكرتك، عالمك</p>
+      <h2>معاً، يمكننا صياغة تجربة لا تُنسى.</h2>
+      <a class="button primary" href="mailto:hello@example.com">ابدأ مشروعك</a>
+    </section>
+  </main>
+  <script type="module" src="scene.js"></script>
+</body>
+</html>
